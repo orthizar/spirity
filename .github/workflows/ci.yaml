@@ -1,0 +1,33 @@
+name: CI
+permissions: write-all
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref }}
+
+on:
+  pull_request:
+    branches:    
+      - main
+    types: 
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+      - closed
+    paths-ignore:
+      - 'docs/**'
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'docs/**'
+
+jobs:
+  tests:
+    name: Run tests
+    uses: ./.github/workflows/tests.yaml
+
+  build:
+    name: Build
+    needs: [tests]
+    uses: ./.github/workflows/build.yaml
