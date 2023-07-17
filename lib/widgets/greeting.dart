@@ -163,26 +163,6 @@ var greetingTexts = <Map<String, dynamic>>[
     "text": "Keep shining, [Name]!",
     "timeSpan": timespans["always"]!,
   },
-  {
-    "text": "Hi, beautiful!",
-    "timeSpan": timespans["always"]!,
-  },
-  {
-    "text": "Hello, superstar!",
-    "timeSpan": timespans["always"]!,
-  },
-  {
-    "text": "Hey, rockstar!",
-    "timeSpan": timespans["always"]!,
-  },
-  {
-    "text": "Hi there, warrior!",
-    "timeSpan": timespans["always"]!,
-  },
-  {
-    "text": "Hello there, champion!",
-    "timeSpan": timespans["always"]!,
-  },
 ];
 
 var greetingSubtexts = <Map<String, dynamic>>[
