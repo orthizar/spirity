@@ -18,6 +18,12 @@ class _BottomMenuState extends State<BottomMenu> {
       'route': Routes.dashboard,
     },
     {
+      'label': 'Journal',
+      'icon': Icons.book,
+      'iconOutlined': Icons.book_outlined,
+      'route': Routes.journal,
+    },
+    {
       'label': 'Settings',
       'icon': Icons.settings,
       'iconOutlined': Icons.settings_outlined,
